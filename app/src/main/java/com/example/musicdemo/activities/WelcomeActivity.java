@@ -29,7 +29,7 @@ public class WelcomeActivity extends BaseActivity {
             @Override
             public void run() {
 //                Log.e("WelcomeActivity", "当前线程为：" + Thread.currentThread());
-                toMain();
+                toLogin();
             }
         }, 3 * 1000);
     }
@@ -39,6 +39,15 @@ public class WelcomeActivity extends BaseActivity {
      */
     private void toMain() {
         Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    /**
+     * 跳转到MainActivity
+     */
+    private void toLogin() {
+        Intent intent = new Intent(this,LoginActivity.class);
         startActivity(intent);
         finish();
     }

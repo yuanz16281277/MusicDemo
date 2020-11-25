@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navBarHeight"
+    android:background="@color/mainColor"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/marginSize"
+    android:paddingRight="@dimen/marginSize">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="慕课音乐"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/navBarTitleSize" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:src="@mipmap/me" />
+
+</FrameLayout>
