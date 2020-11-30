@@ -8,12 +8,14 @@
     android:paddingRight="@dimen/marginSize">
 
     <ImageView
+        android:id="@+id/iv_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:src="@mipmap/back" />
 
     <TextView
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -22,6 +24,7 @@
         android:textSize="@dimen/navBarTitleSize" />
 
     <ImageView
+        android:id="@+id/iv_me"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="right|center_vertical"
