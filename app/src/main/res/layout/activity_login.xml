@@ -15,7 +15,11 @@
         android:src="@mipmap/logo"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="@dimen/marginSize"/>
+    <com.example.musicdemo.views.inputView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight">
 
+    </com.example.musicdemo.views.inputView>
 
 
 </LinearLayout>
