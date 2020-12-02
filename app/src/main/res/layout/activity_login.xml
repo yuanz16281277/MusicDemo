@@ -17,9 +17,20 @@
         android:layout_marginTop="@dimen/marginSize"/>
     <com.example.musicdemo.views.inputView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/inputViewHeight">
-
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/phone"
+        app:input_hint="手机号"
+        app:is_password="false">
     </com.example.musicdemo.views.inputView>
 
+    <com.example.musicdemo.views.inputView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/phone"
+        app:input_hint="手机号"
+        app:is_password="false">
+    </com.example.musicdemo.views.inputView>
 
 </LinearLayout>
