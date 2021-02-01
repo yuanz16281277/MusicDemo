@@ -51,14 +51,7 @@ public class BaseActivity extends Activity {
                 .setIntent(new Intent(Intent.ACTION_VIEW,
                         Uri.parse("https://www.csdn.com/")))
                 .build();
-        ShortcutInfo shortcut3 = new ShortcutInfo.Builder(this, "id3")
-                .setShortLabel("Web site")
-                .setLongLabel("第三个")
-                .setIcon(Icon.createWithResource(this, R.drawable.icon120))
-                .setIntent(new Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://www.github.com/")))
-                .build();
-        mShortcutManager.setDynamicShortcuts(Arrays.asList(shortcut, shortcut2, shortcut3));
+        mShortcutManager.setDynamicShortcuts(Arrays.asList(shortcut, shortcut2));
     }
 
     /**
