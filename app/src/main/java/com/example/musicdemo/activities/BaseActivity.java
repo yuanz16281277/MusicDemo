@@ -32,8 +32,6 @@ public class BaseActivity extends Activity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N_MR1) {
             mShortcutManager = getSystemService(ShortcutManager.class);
             getNewShortcutInfo();
-
-
         }
     }
 
