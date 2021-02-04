@@ -33,6 +33,8 @@ public class BaseActivity extends Activity {
             mShortcutManager = getSystemService(ShortcutManager.class);
             getNewShortcutInfo();
         }
+
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N_MR1)
