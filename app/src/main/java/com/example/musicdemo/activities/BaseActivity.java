@@ -42,14 +42,14 @@ public class BaseActivity extends Activity {
         ShortcutInfo shortcut = new ShortcutInfo.Builder(this, "id1")
                 .setShortLabel("Web site")
                 .setLongLabel("第一个")
-                .setIcon(Icon.createWithResource(this, R.drawable.icon120))
+                .setIcon(Icon.createWithResource(this, R.drawable.ic_launcher_background))
                 .setIntent(new Intent(Intent.ACTION_VIEW,
                         Uri.parse("https://www.baidu.com/")))
                 .build();
         ShortcutInfo shortcut2 = new ShortcutInfo.Builder(this, "id2")
                 .setShortLabel("Web site")
                 .setLongLabel("第二个")
-                .setIcon(Icon.createWithResource(this, R.drawable.icon120))
+                .setIcon(Icon.createWithResource(this, R.drawable.ic_launcher_background))
                 .setIntent(new Intent(Intent.ACTION_VIEW,
                         Uri.parse("https://www.csdn.com/")))
                 .build();

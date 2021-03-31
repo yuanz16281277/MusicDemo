@@ -1,0 +1,26 @@
+apply plugin: 'findbugs'
+
+tasks.withType(FindBugs){
+    description 'Run findbugs'
+    group 'verification'
+    ignoreFailures = true
+
+    //classes的路径，可能随着gradle版本变化而变化
+    classes = fileTree('build/intermediates/javac/debug/classes/')
+//    classes = fileTree('$project.buildDir/intermediates/javac/debug/classes/')
+    source = fileTree('src/main/java/')
+    classpath = files()
+
+    effort = 'max'
+
+    excludeFilter = file("./config/findbug/exclude.xml")
+}
+
+task findbugs (type: FindBugs) {
+
+    reports {
+        xml.enabled = true
+        xml.withMessages = true
+        html.enabled = !xml.isEnabled()
+    }
+}
