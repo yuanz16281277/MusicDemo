@@ -65,6 +65,8 @@ public class BaseActivity extends Activity {
         return findViewById(id);
     }
 
+
+
     /**
      * 初始化NavigationBar
      *
